@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif, "Volkhov", serif;
+}
+:root {
+  --orange: #fd7e14;
+  --green: #009f4d;
+  --dark: #060606;
+  --gray: #707070;
+  --white: #ffffff;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
