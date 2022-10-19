@@ -5,7 +5,6 @@
   font-size: 16px;
   font-family: "Source Sans Pro", sans-serif, 'Volkhov', serif;
 }
-/* font "source" và font "volkhov" đâu giống nhau đâu chị. Làm sao mà gộp 2 font vào 1 font-family được ạ :))) */
 
 :root {
   --orange: #fd7e14;
@@ -19,8 +18,6 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/* Button: thẻ button em nghĩ sử dụng thẻ a với class btn sẽ hay hơn sử dụng thẻ button */
 
 .btn{
   padding: 12px 30px;
@@ -37,14 +34,6 @@
   display: inline-block;
   transition: all .5s;
 }
-
-/* Title */
-/* Một số thẻ sử dụng font volkhov, 1 số thẻ lại sử dụng font source nên em nghĩ lựa chọn 1 trong 2 font làm font chính trong body  */
-
-/* Phần title của từng task em dùng cấu trúc h5, h2, p
-Chị xem có vấn đề gì không ạ  */
-
-/* Em thấy dùng rem không cần thiết lắm, hay mình cứ dùng px chị nhỉ  */
 
 .title h5{
   color: var(--orange);
