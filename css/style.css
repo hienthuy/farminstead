@@ -14,9 +14,13 @@
   --white: #ffffff;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+a{
+  text-decoration: none;
 }
 
 .btn{
@@ -57,3 +61,118 @@
   font-weight: 27px;
   font-family: "Source Sans Pro", sans-serif;
 }
+
+/* /Header */
+.header__main{
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header__main .navbar{
+  align-items: center;
+  padding: 0;
+}
+
+/* /Logo */
+.header__left h1 a{
+  position: relative;
+  font-size: 32px;
+  font-family: "Volkhov", serif;
+  color: var(--orange);
+}
+
+.header__left h1 a i{
+  font-size: 20px;
+  position: absolute;
+  top: -3px;
+  left: 55px;
+}
+
+/* //Logo */
+
+
+.header__right{
+  display: flex;
+  align-items: center;
+  color: var(--white);
+
+}
+
+.header__main .search input{
+  background-image: url(../image/search.png);
+  background-size: 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  border-radius: 19px;
+  border: solid 1px #eee ;
+  cursor: pointer;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+}
+
+.header__main .search input[type=search]:focus{
+  width: 200px;
+  background-position: 10px;
+  color: black;
+  cursor: auto;
+  outline: none;
+  padding-left: 35px;
+}
+
+
+.header__main .DarkAndLight{
+  font-size: 29px;
+}
+
+.header__main .DarkAndLight i{
+  cursor: pointer;
+}
+
+.header__main .menu{
+  font-size: 29px;
+}
+/* //Header */
+
+
+/* /Change Theme */
+/* Light Theme */
+#myBody{
+  background-color: var(--white);
+  color: var(--gray);
+}
+
+#myBody h1,#myBody h2,#myBody h3,#myBody h4,#myBody h5{
+  color: var(--dark);
+}
+
+#myBody #switchButton .gg-sun{
+  display: none;
+}
+
+#myBody #switchButton .gg-moon{
+  display: block;
+}
+/* Dark Theme */
+.dark#myBody{
+  background-color: #404040;
+  color: #707070;
+}
+
+.dark#myBody h1,.dark#myBody h2,.dark#myBody h3,.dark#myBody h4,.dark#myBody h5{
+  color: #fdfffc;
+}
+
+.dark#myBody #switchButton .gg-sun{
+  display: block;
+}
+
+.dark#myBody #switchButton .gg-moon{
+  display: none;
+}
+/* //Change Theme */
+
+
