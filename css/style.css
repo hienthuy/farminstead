@@ -5,6 +5,7 @@
   font-size: 16px;
   font-family: "Source Sans Pro", sans-serif, "Volkhov", serif;
 }
+
 :root {
   --orange: #fd7e14;
   --green: #009f4d;
@@ -16,4 +17,43 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn{
+  padding: 12px 30px;
+  margin-top: 24px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase ;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all .5s;
+}
+
+.title h5{
+  color: var(--orange);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: "Volkhov", serif;
+}
+
+.title h2{
+  color: var(--dark);
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: "Volkhov", serif;
+}
+
+.title p{
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 27px;
+  font-family: "Source Sans Pro", sans-serif;
 }
