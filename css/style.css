@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif, 'Volkhov', serif;
+  font-family: "Source Sans Pro", sans-serif, "Volkhov", serif;
 }
 
 :root {
@@ -40,7 +40,7 @@
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 28px;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
 }
 
 .title h2{
@@ -48,12 +48,12 @@
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
 }
 
 .title p{
   color: var(--gray);
   font-size: 1rem;
   font-weight: 27px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
