@@ -21,7 +21,7 @@
 </head>
 <body id="myBody">
     <!-- Header -->
-    <header class=" header__main fixed-top">
+    <header style="background-color: red;" class=" header__main fixed-top">
         <div class="container">
             <nav class="navbar">
                 <!-- /Logo -->
@@ -44,9 +44,23 @@
                     <i class="gg-moon"></i>
                     <i class="gg-sun"></i>
                  </div>
-                 <!-- /Change theme -->
-                 <div class="menu me-2">
-                    <i class="fa fa-bars"></i>
+                 <!-- //Change theme -->
+                 <!-- Menu -->
+                 <div  div class="menu me-2">
+                    <input type="checkbox" id="showMenu" class="checked">
+                    <label for="showMenu"><i class="fa fa-bars"></i>
+                    </label>
+                    
+                    <ul class="menu__hidden">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./service.html">services</a></li>
+                        <li><a href="./blog.html">blog post</a></li>
+                        <li><a href="./landing.html">landing page</a></li>
+                        <li><a href="#">element page</a></li>
+                        <li><a href="#">404 page</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
                  </div>
             </div>
         </nav>

@@ -21,6 +21,7 @@
 
 a{
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn{
@@ -112,7 +113,10 @@ a{
   transition: all .5s;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
+  -o-transition: all .5s ;
 }
+
+/* /Search bar  */
 
 .header__main .search input[type=search]:focus{
   width: 200px;
@@ -123,29 +127,84 @@ a{
   padding-left: 35px;
 }
 
+/* //Search bar  */
+/* /Dark and light */
 
 .header__main .DarkAndLight{
   font-size: 29px;
+  width: 24px;
+  height: 24px;
 }
 
 .header__main .DarkAndLight i{
   cursor: pointer;
 }
 
-.header__main .menu{
+.header__main .menu i{
   font-size: 29px;
+  cursor: pointer;
 }
-/* //Header */
 
+/* //Dark and light */
+/* /Menu */
+.header__main .menu input{
+  display: none;
+}
+
+.header__main .menu__hidden{
+  background-color: #fff;
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  top: 56px;
+  right: 0;
+  padding: 0;
+  max-height: 0px;
+  min-width: 240px;
+  border-radius: 4px;
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  /* Khi Menu ẩn, lúc bắt đầu thanh Menu sẽ thu lại nhanh, sau đó chậm dần */
+  transition: all .5s ease-out;
+}
+
+.header__main .menu__hidden li a{
+  text-align: center;
+  color: var(--dark);
+  display: block;
+  padding:7px ;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all .5s;
+}
+
+.header__main .menu__hidden li:first-of-type a{
+  color: #fb811e !important;
+}
+
+.header__main .menu__hidden li:hover a{
+  color: #fb811e !important;
+}
+.checked:checked ~ .menu__hidden{
+  max-height: 400px ;
+  /* Khi Menu hiện sẽ hiện từ từ, sau đó nhanh dần */
+  transition: all .5s ease-in;
+}
+
+
+/* //Menu */
+/* //Header */
 
 /* /Change Theme */
 /* Light Theme */
 #myBody{
   background-color: var(--white);
   color: var(--gray);
+  transition: all 0s;
 }
 
 #myBody h1,#myBody h2,#myBody h3,#myBody h4,#myBody h5{
+  transition: all 0s;
   color: var(--dark);
 }
 
@@ -156,9 +215,11 @@ a{
 #myBody #switchButton .gg-moon{
   display: block;
 }
+
 /* Dark Theme */
+/* /Global */
 .dark#myBody{
-  background-color: #404040;
+  background-color: #222222;
   color: #707070;
 }
 
@@ -173,6 +234,16 @@ a{
 .dark#myBody #switchButton .gg-moon{
   display: none;
 }
+/* //Global */
+/* /Hidden Menu */
+.dark#myBody .header__main .menu__hidden{
+  background-color: #222222;
+}
+
+.dark#myBody .header__main .menu__hidden a{
+  color: var(--white);
+}
+
 /* //Change Theme */
 
 
