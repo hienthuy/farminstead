@@ -1,9 +1,10 @@
+/* /Global */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif, "Volkhov", serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 :root {
@@ -22,6 +23,7 @@
 a{
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--dark);
 }
 
 .btn{
@@ -38,6 +40,11 @@ a{
   font-weight: 600;
   display: inline-block;
   transition: all .5s;
+}
+
+.btn:hover{
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .title h5{
@@ -63,6 +70,12 @@ a{
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* //Global */
+.widget{
+  margin-bottom: 40px;
+}
+
+
 /* /Header */
 .header__main{
   height: 90px;
@@ -80,7 +93,8 @@ a{
   position: relative;
   font-size: 32px;
   font-family: "Volkhov", serif;
-  color: var(--orange);
+  color: var(--orange) ;
+  text-transform: none;
 }
 
 .logo h1 a i{
@@ -97,7 +111,6 @@ a{
   display: flex;
   align-items: center;
   color: var(--white);
-
 }
 
 .header__main .search input{
@@ -190,17 +203,20 @@ a{
   /* Khi Menu hiện sẽ hiện từ từ, sau đó nhanh dần */
   transition: all .5s ease-in;
 }
-
-
 /* //Menu */
 /* //Header */
 
+/* <-------------------------------------------------> */
 /* /Change Theme */
 /* Light Theme */
 #myBody{
   background-color: var(--white);
   color: var(--gray);
   transition: all 0s;
+}
+
+.header__right i{
+  color: var(--dark);
 }
 
 #myBody h1,#myBody h2,#myBody h3,#myBody h4,#myBody h5{
@@ -215,7 +231,7 @@ a{
 #myBody #switchButton .gg-moon{
   display: block;
 }
-
+/* <----------------------------------------------->*/
 /* Dark Theme */
 /* /Global */
 .dark#myBody{
@@ -223,8 +239,12 @@ a{
   color: #707070;
 }
 
-.dark#myBody h1,.dark#myBody h2,.dark#myBody h3,.dark#myBody h4,.dark#myBody h5{
-  color: #fdfffc;
+.dark .header__right i{
+  color: var(--white) !important;
+}
+
+.dark#myBody h1,.dark#myBody h2,.dark#myBody h3,.dark#myBody h4,.dark#myBody h5,.dark a{
+  color: #fdfffc !important;
 }
 
 .dark#myBody #switchButton .gg-sun{
