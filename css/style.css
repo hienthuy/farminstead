@@ -12,6 +12,7 @@
   --dark: #060606;
   --gray: #707070;
   --white: #ffffff;
+  --border-radius: 30px;
 }
 .container {
   max-width: 1280px;
@@ -56,4 +57,10 @@
   font-size: 1rem;
   font-weight: 27px;
   font-family: "Source Sans Pro", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: 'Volkhov', serif;
 }
