@@ -220,6 +220,10 @@ transform: translate(50%, 50%);
     color: #fff;
 }
 
+.team__hover .s-link i:hover{
+    color: var(--orange);
+}
+
 .team__member:hover .team__hover .s-link{
     bottom: 10%;     
     opacity: 1;
@@ -230,3 +234,62 @@ transform: translate(50%, 50%);
     color: #1e272e;
     font-size: 16px;
 }
+
+/* /video */
+.video__wrap{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.video__title{
+    text-align: center;
+}
+
+.video .video__title h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.video__content img{
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.video__play__icon{
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation: ripple 1s linear infinite;
+    color: var(--orange);
+}
+.play__view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+#small-dialog{
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+.video__content iframe{
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+#small-dialog iframe{
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+/* //video */
