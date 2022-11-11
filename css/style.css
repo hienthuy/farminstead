@@ -22,11 +22,11 @@
 
 h2,h3,h4,h5,h6{
   font-family: "Volkhov", serif;
+  margin: 0;
 }
 
 a{
   text-decoration: none;
-  text-transform: uppercase;
   color: var(--dark);
 }
 
@@ -54,7 +54,7 @@ a{
 }
 
 .title h5{
-  color: var(--orange);
+  color: var(--orange) !important;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 28px;
