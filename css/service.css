@@ -1,0 +1,195 @@
+/* /Banner */
+
+.banner{
+    background-image: url(../image/inner-banner.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.banner__name h2{
+    font-weight: 700;
+    font-family: "Volkhov", serif;
+    font-size: 24px;
+}
+.banner__name p{
+    font-size: 15px;
+    word-spacing: 2.5px;
+}
+
+.banner__name p a{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #707070;
+}
+
+.dark .banner__name p a{
+    color: #B7B7B7 !important;
+}
+
+/* //Banner */
+/* /Services */
+
+
+.services__content{
+    padding: 50px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+}
+
+.dark .services__content{
+    background-color: #222222;
+    box-shadow: 0 1rem 3rem rgb(23, 19, 19);
+}
+
+.services__content:hover{
+    transition: all .3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.services__content i{
+    font-size: 45px;
+    color: var(--orange);
+}
+
+.services__content h4 a{
+    margin-top: 25px;
+    display: block;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: "Volkhov", serif;
+}
+
+.services__content h4:hover a{
+    transition: all .3s;
+    color: var(--orange) !important;
+}
+/* //Services */
+/* /Why choose us */
+.reason img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.reason__right{
+    padding: 0 15px 0 48px;
+}
+
+.grids__info{
+    padding: 0 15px;
+}
+
+.grids__info i{
+    font-size: 30px;
+    color: var(--orange) !important;
+}
+.grids__info .detail{
+    margin-left: 0.5rem;
+}
+
+.grids__info .detail h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.grids__info .detail p{
+    font-size: 17px;
+}
+
+/* //Why choose us */
+/* /Number  */
+.number {
+    background-image: url(../img/bg14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.row{
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.number__item{
+    width: 25%;
+}
+
+.number__item p{
+    margin: 0;
+}
+
+.number__item .time span{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.number__item i{
+    color: var(--green);
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgb(0 159 77 / 4%);
+    font-size: 32px;
+}
+
+.number__item p:last-of-type{
+    text-transform: uppercase;
+    color: var(--dark);
+    font-size: 17px;
+}
+
+.dark span.counter{
+    color: #fff;
+}
+
+.dark p.count__text{
+    color: #fdfffc !important; 
+}
+
+/* //Number  */
+/* /Agriculture */
+.agriculture{
+    position: relative;
+    background: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg);
+    z-index: 1;
+}
+.agriculture::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(8 8 8 / 44%);
+    z-index: -1;
+}
+
+.agriculture .container{
+    z-index: 20;
+}
+
+.agriculture__left h5{
+    color: var(--white) !important;
+    font-size: 22px;
+}
+
+.agriculture__left h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--white) !important;
+}
+
+/* //Agriculture */

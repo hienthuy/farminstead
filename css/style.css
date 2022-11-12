@@ -194,6 +194,7 @@ a{
   font-size: 16px;
   font-weight: 600;
   transition: all .5s;
+  text-transform: uppercase;
 }
 
 .header__main .menu__hidden li:first-of-type a{
@@ -242,6 +243,11 @@ a{
 .dark#myBody{
   background-color: #222222;
   color: #B7B7B7;
+}
+
+.dark#myBody p{
+  color: #B7B7B7;
+
 }
 
 .dark .header__right i{
