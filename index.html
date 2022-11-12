@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css" />
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://css.gg/moon.css" rel="stylesheet" />
     <link href="https://css.gg/sun.css" rel="stylesheet" />
     <!-- Bootstrap -->
@@ -38,10 +38,55 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body>
-    <header class="main_header fixed-top" id="header_main">
-      <nav class="navbar navbar-expand-lg">
-        <!-- bg-light -->
+  <body id="myBody">
+    <!-- Header -->
+    <header class="header header__main fixed-top">
+      <div class="container">
+        <nav class="navbar">
+          <!-- /Logo -->
+          <div class="header__left logo">
+            <h1>
+              <a href="#">
+                Farmstead
+                <i class="fa fa-leaf"></i>
+              </a>
+            </h1>
+          </div>
+          <!-- //Logo -->
+          <div class="header__right">
+            <!-- /search button  -->
+            <div class="search me-3">
+              <input type="search" name="s" />
+            </div>
+            <!-- //search button  -->
+            <!-- /Change theme -->
+            <div class="DarkAndLight me-3" id="switchButton">
+              <i class="gg-moon"></i>
+              <i class="gg-sun"></i>
+            </div>
+            <!-- //Change theme -->
+            <!-- Menu -->
+            <div div class="menu me-2" id="manu">
+              <input type="checkbox" id="showMenu" class="checked" />
+              <label for="showMenu"><i class="fa fa-bars"></i> </label>
+
+              <ul class="menu__hidden">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./service.html">services</a></li>
+                <li><a href="./blog.html">blog post</a></li>
+                <li><a href="./landing.html">landing page</a></li>
+                <li><a href="#">element page</a></li>
+                <li><a href="#">404 page</a></li>
+                <li><a href="./contact.html">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- <header class="main_header fixed-top" id="header_main">
+      <nav class="navbar navbar-expand-lg">        
         <div class="container-fluid ps-5 pe-5">
           <a class="navbar-brand" href="#" id="idfarmstead"
             >Farmstead
@@ -66,9 +111,9 @@
               <a class="nav-link ms-3" aria-current="page" href="#">Home</a>
               <a class="nav-link ms-3" href="#">About</a>
               <a class="nav-link ms-3" href="#">Services</a>
-              <a class="nav-link ms-3">Blog Posts</a>
-              <a class="nav-link ms-3">Landing Page</a>
-              <a class="nav-link ms-3">Contact</a>
+              <a class="nav-link ms-3" href="#">Blog Posts</a>
+              <a class="nav-link ms-3" href="#">Landing Page</a>
+              <a class="nav-link ms-3" href="#">Contact</a>
               <form class="nav-link ms-3 search-right" href="#">
                 <input type="search" placeholder=" Search" />
               </form>
@@ -76,12 +121,12 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header> -->
     <!-- CAROUSEL  -->
     <section class="carousel">
       <div class="container_carousel">
         <div class="row">
-          <div class="banner_left">
+          <div class="col-md-5  banner_left">
             <div class="banner_left_content">
               <h2 class="farmtext">Farm</h2>
               <div class="bann_contents">
@@ -98,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="banner_right ml-auto p-0">
+          <div class="col-md-7 banner_right ml-auto p-0">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -220,12 +265,7 @@
       </div>
     </section>
     <!-- INTRO  -->
-    <section class="intro">
-      <!-- <div class="container_intro">
-        <div class="intro_content"></div>
-
-        <div class="intro_row"></div>
-      </div> -->
+    <section class="intro">   
 
       <div class="container container_intro">
         <div class="row intro_content">
@@ -253,7 +293,7 @@
               </div>
               <div class="card_body">
                 <span>Natural</span>
-                <a href="services">Agriculture Products</a>
+                <a href="#">Agriculture Products</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -270,7 +310,7 @@
               </div>
               <div class="card_body">
                 <span>Agriculture</span>
-                <a href="services">Fresh Vegetables</a>
+                <a href="#">Fresh Vegetables</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -287,7 +327,7 @@
               </div>
               <div class="card_body">
                 <span>Farm</span>
-                <a href="services">Organic Products</a>
+                <a href="#">Organic Products</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -337,7 +377,7 @@
         </div>
       </div>
     </section>
-    <!-- SERVICE-BLOG  -->
+    <!-- homeSERVICE  -->
     <section class="homeService">
       <div class="container text-center">
         <div class="row homeService_row justify-content-center">
@@ -580,6 +620,7 @@
               <div class="feedback_right col-md-9">
                 <span class="fa fa-quote-left"></span>
                 <blockquote>
+                  <q
                     >Lorem ipsum dolor sit amet int consectetur adipisicing
                     elit. Velita beatae laudantium Quas minima sunt natus
                     tempore, maiores aliquid modi felis sequi optio lacinia id
@@ -649,7 +690,7 @@
               <ul class="social">
                 <li>
                   <a href="#">
-                    <span class="fab fa-facebook-f"></span>
+                    <span class="fa fa-facebook"></span>
                   </a>
                 </li>
                 <li>
@@ -689,6 +730,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Change Theme -->
+    <script src="./js/DarkAndLight.js"></script>
     <!-- BACKTOTOP  -->
     <script src="./Js/main.js"></script>
     <script src="./Js/util.js"></script>
