@@ -1,0 +1,186 @@
+/* /Banner */
+
+.banner{
+    background-image: url(../image/inner-banner.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.banner__name h2{
+    font-weight: 700;
+    font-family: "Volkhov", serif;
+    font-size: 24px;
+}
+
+.banner__name p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* //Banner */
+
+/* /Blog Post */
+/* /Global */
+.blog__post{
+    padding-right: 3rem;
+}
+#myBody .blog__content{
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    border-radius: 8px;
+}
+
+.dark#myBody .blog__content{
+    background-color: #27282b;
+}
+
+.post__img a img{
+    width: 100%;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Chút có thời gian thì kiểm tra lại responsive */
+
+.post__body p{
+    font-family: "Volkhov", serif;
+    line-height: 25px;
+}
+
+.post__body a {
+    display: block;
+    text-transform: none;
+    margin: 10px 0 8px;
+    line-height: 34px;
+    transition: all .5s;
+}
+
+.post__body a p{
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+}
+
+/* /Pagination */
+.pagination__style{
+    list-style: none;
+    padding: 0;
+}
+
+.pagination__style li{
+    display: inline-block;
+    padding: 10px 18px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    color: var(--dark);
+    transition: all .5s;
+    border: none;
+}
+.pagination__style li:hover{
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--white);
+}
+/* //Pagination */
+/* /Right Slider Bar */
+/* /Search bar */
+.search__bar {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.search__bar input{
+    width: 100%;
+    outline: none;
+    color: var(--gray);
+    background-color: var(--white);
+    padding: 12px 70px 12px 17px;
+    font-size: 18px;
+    height: 55px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.search__bar input:focus{
+    border: 1px solid #060606;
+}
+
+.search__bar .btn{
+    position: absolute;
+    border-radius: 0;
+    margin: 0;
+    border-radius: 4px;
+    text-transform: none;
+    height: 50px;
+    right: 0;
+    top: 3px;
+    font-size: 16px;
+    padding: 0.375rem 0.75rem;
+}
+/* //Search bar */
+.right__slidebar h2{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--dark);
+    margin-bottom: 18px;
+    font-family: "Volkhov", serif;
+}
+
+.right__slidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right__slidebar ul li{
+    color: var(--gray);
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.dark .right__slidebar ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+.right__slidebar ul li a{
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 24px;
+    /* display: flex;
+    align-items: baseline; */
+    margin-bottom: 6px; 
+    color: var(--dark);
+    transition: all .3s ease;
+}
+
+.right__slidebar a:hover{
+    color: var(--orange) !important;
+}
+/* /Recent Post  */
+.recent__posts ul li a{
+    font-weight: 600;
+}
+/* //Recent Post  */
+/* /Recent Comments  */
+.recent__comment a{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--orange) !important;
+    transition: all .3s ease; 
+}
+.recent__comment a:hover{
+    text-decoration: underline;
+}
+.recent__comment ul li {
+    border: none;
+}
+
+
+/* //Recent Comments  */
+
