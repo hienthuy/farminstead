@@ -1,210 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Posts</title>
     <!-- Font google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://css.gg/moon.css' rel='stylesheet'>
     <link href='https://css.gg/sun.css' rel='stylesheet'>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Link css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/blog.css">
 
 </head>
+
 <body id="myBody">
     <!-- Header -->
-    <header class=" header__main fixed-top">
+    <header id="header" class=" header__main fixed-top">
         <div class="container">
             <nav class="navbar">
                 <!-- /Logo -->
-            <div class="header__left logo">
-                <h1>
-                <a href="#"> Farmstead
-                <i class="fa fa-leaf"></i>
-                </a>
-                </h1>
-            </div>
+                <div class="header__left logo">
+                    <h1>
+                        <a href="#"> Farmstead
+                            <i class="fa fa-leaf"></i>
+                        </a>
+                    </h1>
+                </div>
                 <!-- //Logo -->
-            <div class="header__right">
-                <!-- /search button  -->
-                <div class="search me-3">
-                <input type="search" name="s">
-                 </div>
-                <!-- //search button  -->
-                 <!-- /Change theme -->
-                 <div class="DarkAndLight me-3" id="switchButton" >
-                    <i class="gg-moon"></i>
-                    <i class="gg-sun"></i>
-                 </div>
-                 <!-- //Change theme -->
-                 <!-- Menu -->
-                 <div  div class="menu me-2">
-                    <input type="checkbox" id="showMenu" class="checked">
-                    <label for="showMenu"><i class="fa fa-bars"></i>
-                    </label>
-                    
-                    <ul class="menu__hidden">
-                        <li><a href="./index.html">home</a></li>
-                        <li><a href="./about.html">about</a></li>
-                        <li><a href="./service.html">services</a></li>
-                        <li><a href="./blog.html">blog post</a></li>
-                        <li><a href="./landing.html">landing page</a></li>
-                        <li><a href="#">element page</a></li>
-                        <li><a href="#">404 page</a></li>
-                        <li><a href="./contact.html">contact</a></li>
-                    </ul>
-                 </div>
-            </div>
-        </nav>
+                <div class="header__right">
+                    <!-- /search button  -->
+                    <div class="search me-3">
+                        <input type="search" name="s">
+                    </div>
+                    <!-- //search button  -->
+                    <!-- /Change theme -->
+                    <div class="DarkAndLight me-3" id="switchButton">
+                        <i class="gg-moon"></i>
+                        <i class="gg-sun"></i>
+                    </div>
+                    <!-- //Change theme -->
+                    <!-- Menu -->
+                    <div div class="menu me-2">
+                        <input type="checkbox" id="showMenu" class="checked">
+                        <label for="showMenu"><i class="fa fa-bars"></i>
+                        </label>
+
+                        <ul class="menu__hidden">
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="./about.html">about</a></li>
+                            <li><a href="./service.html">services</a></li>
+                            <li><a href="./blog.html">blog post</a></li>
+                            <li><a href="./landing.html">landing page</a></li>
+                            <li><a href="#">element page</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <!-- Banner -->
     <section class="banner ">
         <div class="banner__content container py-5 ">
             <div class="banner__name py-lg-5 py-sm-4 mt-5">
-            <h2 class="mb-2 ">Blog Posts</h2>
-            <p>Home</p>
-        </div>
+                <h2 class="mb-2 ">Blog Posts</h2>
+                <p>Home</p>
+            </div>
         </div>
     </section>
     <!-- Blog Post -->
     <section class="post py-5">
         <div class="post__warp py-md-5 py4">
             <div class="container">
-    <!-- /Main content -->
+                <!-- /Main content -->
                 <div class="row">
                     <div class="col-xl-9 col-lg-8 pr-lg-5 blog__post">
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="./Blog Single/page1.html">
-                                        <img src="./image/blog2.jpg" alt="blog2">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3 ">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        Hello world!
-                                    </p></a>
-                                    <a href="./Blog Single/page1.html" class="btn ">
-                                        read more</a>
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="./Blog Single/page1.html">
+                                            <img src="./image/blog2.jpg" alt="blog2">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3 ">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                Hello world!
+                                            </p>
+                                        </a>
+                                        <a href="./Blog Single/page1.html" class="btn ">
+                                            read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="#">
-                                        <img src="./image/blog1.jpg" alt="blog1">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        Sed ut perspiciatis unde omnis iste natus
-                                    </p></a>
-                                    <a class="btn ">read more</a>
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="#">
+                                            <img src="./image/blog1.jpg" alt="blog1">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                Sed ut perspiciatis unde omnis iste natus
+                                            </p>
+                                        </a>
+                                        <a class="btn ">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="#">
-                                        <img src="./image/bg2.jpg" alt="bg2">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        Nemo enim ipsam quia sit aspernatur aut odit
-                                    </p></a>
-                                    <a class="btn ">read more</a>
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="#">
+                                            <img src="./image/bg2.jpg" alt="bg2">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                Nemo enim ipsam quia sit aspernatur aut odit
+                                            </p>
+                                        </a>
+                                        <a class="btn ">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="#">
-                                        <img src="./image/bg1.jpg" alt="bg1">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        Ut enim ad minima, quis nostrum eationem
-                                    </p></a>
-                                    <a class="btn ">read more</a>
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="#">
+                                            <img src="./image/bg1.jpg" alt="bg1">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                Ut enim ad minima, quis nostrum eationem
+                                            </p>
+                                        </a>
+                                        <a class="btn ">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="#">
-                                        <img src="./image/blog3.jpg" alt="blog3">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        At eos et accusamus et iusto odio ssimos duci
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="#">
+                                            <img src="./image/blog3.jpg" alt="blog3">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                At eos et accusamus et iusto odio ssimos duci
 
-                                    </p></a>
-                                    <a class="btn ">read more</a>
+                                            </p>
+                                        </a>
+                                        <a class="btn ">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <div class="blog__content mb-5">
-                        <div class="post__item px-3 py-3">
-                            <div class="post__header">
-                                <header class="post__img">
-                                    <a href="#">
-                                        <img src="./image/blog4.jpg" alt="blog4">
-                                    </a>
-                                </header>
-                                <div class="post__body mt-4 pt-4 pb-3">
-                                    <p>March 24, 2021</p>
-                                    <a class="changeColor" href=""><p>
-                                        Hello world!
-                                    </p></a>
-                                    <a class="btn ">read more</a>
+                            <div class="post__item px-3 py-3">
+                                <div class="post__header">
+                                    <header class="post__img">
+                                        <a href="#">
+                                            <img src="./image/blog4.jpg" alt="blog4">
+                                        </a>
+                                    </header>
+                                    <div class="post__body mt-4 pt-4 pb-3">
+                                        <p>March 24, 2021</p>
+                                        <a class="changeColor" href="">
+                                            <p>
+                                                Hello world!
+                                            </p>
+                                        </a>
+                                        <a class="btn ">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- /Main content -->
+                        <!-- /Pagination -->
+                        <div class="pagination">
+                            <ul class="pagination__style">
+                                <li>Prev</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>Next</li>
+                            </ul>
+                        </div>
                     </div>
-    <!-- /Main content -->
-    <!-- /Pagination -->
-                    <div class="pagination">
-                        <ul class="pagination__style">
-                            <li>Prev</li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>Next</li>
-                        </ul>
-                    </div>
-                </div>
-    <!-- //Pagination -->
-    <!-- /Right Slider Bar -->
+                    <!-- //Pagination -->
+                    <!-- /Right Slider Bar -->
                     <div class="col-xl-3 col-lg-4 mt-lg-0 mt-5">
                         <div class="right__slidebar">
                             <section class="search__bar">
@@ -259,25 +281,132 @@
                             <section class="meta widget">
                                 <h2>Meta</h2>
                                 <ul>
-                                    <li><a href="https://wp.w3layouts.com/farmstead/wp-login.php" target="_blank">Log In</a></li>
-                                    <li><a href="https://wp.w3layouts.com/farmstead/comments/feed/" target="_blank">Entries Feed</a></li>
-                                    <li><a href="https://wp.w3layouts.com/farmstead/comments/feed/" target="_blank">Comments Feed</a></li>
+                                    <li><a href="https://wp.w3layouts.com/farmstead/wp-login.php" target="_blank">Log
+                                            In</a></li>
+                                    <li><a href="https://wp.w3layouts.com/farmstead/comments/feed/"
+                                            target="_blank">Entries Feed</a></li>
+                                    <li><a href="https://wp.w3layouts.com/farmstead/comments/feed/"
+                                            target="_blank">Comments Feed</a></li>
                                     <li><a href="https://wordpress.org/" target="_blank">WordPress.Org</a></li>
                                 </ul>
                             </section>
                         </div>
                     </div>
-    <!-- //Right Slider Bar -->
+                    <!-- //Right Slider Bar -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer></footer>
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="footer_main">
+            <div class="container">
+                <div class="row footer_content">
+                    <div class="col col-lg-4 footer_item1">
+                        <h3>Find Us</h3>
+                        <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                        <p class="footer_info">
+                            Phone:
+                            <a href="tel:+12 23456790 ">+12 23456790</a>
+                        </p>
+                        <p class="footer_info">
+                            Email:
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </p>
+                        <p class="footer_info">
+                            Fax:
+                            <a href="tel:+ 11 367 21890">+ 11 367 21890</a>
+                        </p>
+                    </div>
+                    <div class="col footer_item2">
+                        <h4 class="logo">
+                            <a href="#idfarmstead">Farmstead
+                                <i class="fa fa-leaf"></i>
+                            </a>
+                        </h4>
+                        <p>
+                            Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+                            Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+                        </p>
+                        <p>
+                            © 2022 Farmstead. All Rights Reserved | WordPress Theme by
+                            <a class="copyright" href="#">W3Layouts.</a>
+                        </p>
+                    </div>
+                    <div class="col footer_item3">
+                        <h3>NEWSLETTER</h3>
+                        <div class="footer_subcri">
+                            <p>
+                                Subscribe to our mailing list and get updates to your email
+                                inbox.
+                            </p>
+                            <form action="">
+                                <input type="email" placeholder="Email Address" />
+                                <button>
+                                    <span class="fa fa-paper-plane" area-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <ul class="social">
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-linkedin-in"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-google-plus-g"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-github"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back top top -->
+    <a href="#header_main" class="backtotop cd-top text-replace js-cd-top cd-top--is-visible">
+        <i class="fa fa-level-up-alt"></i>
+    </a>
 
     <!-- Change Theme -->
     <script src="./js/DarkAndLight.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- BACKTOTOP  -->
+    <script src="./Js/main.js"></script>
+    <script src="./Js/util.js"></script>
+    <!-- Animation of header -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").classList.add("header__bg");
+            } else {
+                document.getElementById("header").classList.remove("header__bg");
+            }
+        }
+    </script>
 </body>
+
 </html>

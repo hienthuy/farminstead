@@ -30,10 +30,10 @@
 }
 
 /* //Banner */
-/* /Services */
+/* /services */
 
 
-.services__content{
+.servicesQA__content{
     padding: 50px 35px;
     position: relative;
     z-index: 1;
@@ -42,21 +42,21 @@
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
 }
 
-.dark .services__content{
+.dark .servicesQA__content{
     background-color: #222222;
     box-shadow: 0 1rem 3rem rgb(23, 19, 19);
 }
 
-.services__content:hover{
+.servicesQA__content:hover{
     transition: all .3s;
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
-.services__content i{
+.servicesQA__content i{
     font-size: 45px;
     color: var(--orange);
 }
 
-.services__content h4 a{
+.servicesQA__content h4 a{
     margin-top: 25px;
     display: block;
     color: var(--black);
@@ -68,11 +68,15 @@
     font-family: "Volkhov", serif;
 }
 
-.services__content h4:hover a{
+.dark .servicesQA__content h4 a{
+    color: #fdfffc !important;
+}
+
+.servicesQA__content h4:hover a{
     transition: all .3s;
     color: var(--orange) !important;
 }
-/* //Services */
+/* //services */
 /* /Why choose us */
 .reason img{
     max-width: 100%;

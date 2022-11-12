@@ -12,6 +12,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap">
     <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +33,7 @@
 
 <body id="myBody">
     <!-- Header -->
-    <header class=" header__main fixed-top">
+    <header id="header" class=" header__main fixed-top">
         <div class="container">
             <nav class="navbar">
                 <!-- /Logo -->
@@ -79,7 +82,7 @@
     <section class="banner ">
         <div class="banner__content container py-5 ">
             <div class="banner__name py-lg-5 py-sm-4 mt-5">
-                <h2>About Us</h2>
+                <h2 class="mb-2 ">About Us</h2>
                 <p> <a href="../index.html">Home</a> » About page </p>
             </div>
         </div>
@@ -188,8 +191,8 @@
                             </div>
                         </div>
                         <div class="team__title pt-3">
-                            <h5><a href="#undefined">Brock Lee</a></h5>
-                            <span>FARMER</span>
+                            <h5><a href="#undefined">Shona Leer</a></h5>
+                            <span>FOOD PRODUCTION</span>
                         </div>
                     </div>
                 </div>
@@ -212,8 +215,8 @@
                             </div>
                         </div>
                         <div class="team__title pt-3">
-                            <h5><a href="#undefined">Shona Leer</a></h5>
-                            <span>Food Production</span>
+                            <h5><a href="#undefined">Brock Lee</a></h5>
+                            <span>FARMER</span>
                         </div>
                     </div>
                 </div>
@@ -275,8 +278,93 @@
     </section>
     <!-- Slider -->
     <section></section>
-    <!-- Footer -->
-    <footer></footer>
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="footer_main">
+            <div class="container">
+                <div class="row footer_content">
+                    <div class="col col-lg-4 footer_item1">
+                        <h3>Find Us</h3>
+                        <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                        <p class="footer_info">
+                            Phone:
+                            <a href="tel:+12 23456790 ">+12 23456790</a>
+                        </p>
+                        <p class="footer_info">
+                            Email:
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </p>
+                        <p class="footer_info">
+                            Fax:
+                            <a href="tel:+ 11 367 21890">+ 11 367 21890</a>
+                        </p>
+                    </div>
+                    <div class="col footer_item2">
+                        <h4 class="logo">
+                            <a href="#idfarmstead">Farmstead
+                                <i class="fa fa-leaf"></i>
+                            </a>
+                        </h4>
+                        <p>
+                            Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+                            Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+                        </p>
+                        <p>
+                            © 2022 Farmstead. All Rights Reserved | WordPress Theme by
+                            <a class="copyright" href="#">W3Layouts.</a>
+                        </p>
+                    </div>
+                    <div class="col footer_item3">
+                        <h3>NEWSLETTER</h3>
+                        <div class="footer_subcri">
+                            <p>
+                                Subscribe to our mailing list and get updates to your email
+                                inbox.
+                            </p>
+                            <form action="">
+                                <input type="email" placeholder="Email Address" />
+                                <button>
+                                    <span class="fa fa-paper-plane" area-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <ul class="social">
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-linkedin-in"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-google-plus-g"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#undefined">
+                                    <span class="fab fa-github"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back top top -->
+    <a href="#header_main" class="backtotop cd-top text-replace js-cd-top cd-top--is-visible">
+        <i class="fa fa-level-up-alt"></i>
+    </a>
 
     <!-- Change Theme -->
     <script src="./js/DarkAndLight.js"></script>
@@ -301,6 +389,9 @@
             })
     </script>
     <!-- //COUNT UP -->
+    <!-- BACKTOTOP  -->
+    <script src="./Js/main.js"></script>
+    <script src="./Js/util.js"></script>
     <!-- Pop up video -->
     <!-- Magnific Popup core JS file -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
@@ -340,6 +431,16 @@
             });
         });
     </script>
+    <!-- Animation of header -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").classList.add("header__bg");
+            } else {
+                document.getElementById("header").classList.remove("header__bg");
+            }
+        }
+    </script>
 </body>
-
 </html>

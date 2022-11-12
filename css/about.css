@@ -1,5 +1,4 @@
-/* /Banner */
-
+  /* /Banner */
 .banner{
     background-image: url(../image/inner-banner.png) ;
     background-repeat: no-repeat;
@@ -201,6 +200,15 @@ transform: translate(50%, 50%);
     color: #fff;
     font-weight: bold;
 }   
+
+.team__hover .desk h4 a:hover{
+    color: var(--orange);
+    transition: all .5s;
+}
+
+.team__hover .desk p{
+    color: #fff;
+}
 .team__hover .desk{
     color: #fff;
     font-size: 17px;}
@@ -234,6 +242,7 @@ transform: translate(50%, 50%);
     color: #1e272e;
     font-size: 16px;
 }
+/* // our team  */
 
 /* /video */
 .video__wrap{

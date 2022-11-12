@@ -9,7 +9,7 @@
   }
   
   :root {
-    --orange: #fd7e14;
+    --orange: #fb811e;
     --green: #009f4d;
     --dark: #060606;
     --gray: #707070;
@@ -282,11 +282,11 @@ body a, button , .btn{
   }
   
   .dark .header__right i{
-    color: var(--white) !important;
+    color: var(--dark) !important;
   }
   
   .dark#myBody h1,.dark#myBody h2,.dark#myBody h3,.dark#myBody h4,.dark#myBody h5,.dark a{
-    color: #fdfffc !important;
+    color: #fdfffc ;
   }
   
   .dark#myBody #switchButton .gg-sun{
@@ -332,8 +332,8 @@ header.sticky .logo a{
 .header__left a{
     transition: all .5s;
 }
-.header__left a:hover{
-    color: var(--dark);
+#myBody .header__left a:hover{
+    color: var(--dark) !important;
 }
 
 
@@ -369,11 +369,14 @@ header.sticky .logo a{
     width: 41.7%;
 }
 .banner_left h2 {
-    color: #f4f4f4 !important;
+    color: #f4f4f4 ;
     font-size: 100px;
     font-weight: bold;
     margin-left: -0.5em;
     font-family: 'Volkhov', serif;
+}
+.dark .banner_left  h2{
+    color: #0b0d0e !important;
 }
 .banner_left h3{
     font-size: 40px;
@@ -450,56 +453,24 @@ p.banner_text{
     color: var(--white);
 }  
 
-/* FEATURE */
-.feature{
-    padding: 3rem 0;
-    
+/* /Welcome */
+.content-left{
+    padding-right: 36px;
 }
-.container-feature {
-    max-width: 1200px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    /* padding: 3rem 1rem; */
-    display: flex;
-    
-    
-}
-.feature-left  {
-    width: 50%;
-    padding-left: 15px;
-    padding-right: 3rem;
 
-
-}
-.feature-left h5{
-    font-size: 22px;
-    color: var(--orange);
-}
-.feature-left h3{
-    font-size: 40px;
-    margin: 0 0 1rem;
-    color: var(--dark);
-}
-.feature-left p{
+.title p{
     font-size: 17px;
-    line-height: 27px;
-    color: var(--gray);
+    margin: 0;
 }
-.feature-right{
-    width: 50%;
-    text-align: center;
-}
-.feature-right img{
-    display: block;
+
+.content-photo img{
     max-width: 100%;
-    width: 100%;
+    display: block;
     border-radius: 8px;
+    width: 100%;
 }
+
+/* //Welcome */
 
 /***INTRO******/
 .intro {
@@ -587,6 +558,13 @@ p.banner_text{
     padding: 15px 0;
     color: var(--dark);
 }
+
+/* Bổ sung hiệu ứng hover thẻ a */
+
+.card_body a:hover{
+    color: var(--green);
+}
+
 .card_body p {
     font-size: 17px;
     line-height: 27px;
@@ -720,6 +698,12 @@ p.banner_text{
     margin-top: 15px;
 }
 
+/* Bổ sung: hiệu ứng hover thẻ h4 */
+.feature1_para h4:hover{
+    color: var(--green) ;
+    transition: all .3s;
+}
+
 /*  GALLERY******/
 .gallery{
     padding: 3rem 0;
@@ -818,10 +802,11 @@ p.banner_text{
 .feedback_layout{
     padding: 48px 0;
 }
-.feedback_layout .container{
+/* ADD: Em thấy cái này đang bị thừa */
+/* .feedback_layout .container{
     margin: 0 2rem;
     padding: 3rem 1rem;
-}
+} */
 .feedback_content{
     max-width: 900px ;
     margin: auto ;
@@ -999,6 +984,12 @@ transform: translate(50%, 50%);
     color: #fff;
     font-weight: bold;
 }   
+
+.team__hover .desk h4 a:hover{
+    color: var(--orange);
+    transition: all .5s;
+}
+
 .team__hover .desk p{
     color: #fff;
 }
@@ -1035,7 +1026,7 @@ transform: translate(50%, 50%);
     color: #1e272e;
     font-size: 16px;
 }
-
+/* // our team  */
 
 /* CONTACT */
 
@@ -1089,6 +1080,9 @@ transform: translate(50%, 50%);
     outline: none;
     border-radius: 4px;
 }
+.input_block input:focus{
+    border: 1px solid var(--orange);
+}
 .form_text textarea{
     width: 100%;
     height: 120px;
@@ -1098,6 +1092,10 @@ transform: translate(50%, 50%);
     border: 1px solid #eee;
     outline: none;
     border-radius: 4px;
+}
+
+.cont_right h6{
+    margin-bottom: 8px;
 }
 
 /* CONTACT_MAP */
@@ -1163,7 +1161,7 @@ transform: translate(50%, 50%);
     transition: all 0.5s;
 }
 .footer_item2 .logo a:hover{
-    color: var(--dark);
+    color: var(--dark) !important;
 }
 .footer_item2 .logo i {
     position: absolute;
@@ -1243,7 +1241,7 @@ transform: translate(50%, 50%);
 }
 .footer_item3 .social a:hover{
     transition: all .5s;
-    color: var(--orange);
+    color: var(--orange) !important;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%)
 }
